@@ -125,8 +125,7 @@ function sshConnect() {
         return updateRemoteApp();
       } else {
         return Promise.reject(failed.join(', '));
-      }
-    })
+      }})
     .then(function(status) {
       if (status) {
         console.log('Restarting remote services...');
